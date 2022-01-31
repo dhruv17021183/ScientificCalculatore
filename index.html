@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
+    <title>Calculater</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        
+        <div class="calculater">
+        <input type="text" name="screen" id="screen" value="0">
+
+            <table>
+                <tr>
+                    <td><button id="mc" onclick="MC(document.getElementById('screen'))">MC</button></td>
+                    <td><button id="mr" onclick="MR(document.getElementById('screen'))">MR</button></td>
+                    <td><button id="mplus" onclick="MPLUS(document.getElementById('screen'))">M+</button></td>
+                    <td><button id="mminus" onclick="MMINUS(document.getElementById('screen'))">M-</button></td>
+                    <td><button id="ms" onclick="MS(document.getElementById('screen'))">MS</button></td>
+                    <td><button>DEG</button></td>
+                </tr>
+                <tr>
+                    <td><button>C</button></td> 
+                    <td><button>x^2</button></td>
+                    <td><button>1/x</button></td>
+                    <td><button>|x|</button></td>
+                    <td><button>--></button></td> 
+                    <td><button>%</button></td>         
+                </tr>
+                <tr>
+                    <td><button>cos</button></td>
+                    <td><button>sqrt</button></td>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button onclick="fact(document.getElementById('screen'))">n!</button></td>
+                    <td><button>/</button></td>
+                </tr>
+                <tr>
+                    <td><button>sin</button></td>
+                    <td><button onclick="add(document.getElementById('screen'),'**')">x^y</button></td>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                   
+                </tr>
+                <tr>
+                    <td><button>e</button></td>
+                    <td><button>10^x</button></td>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>Pi</button></td>
+                    <td><button>log</button></td>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>tan</button></td>
+                    <td><button>ln</button></td>
+                    <td><button>+/-</button></td>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>    
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
